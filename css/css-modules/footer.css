@@ -1,0 +1,62 @@
+.footer .w-col{
+  padding: 0;
+}
+
+.socials,
+.copyright{
+  padding: 25px;
+  text-align: center;
+}
+
+.socials{
+  background: var(--dark);
+}
+
+.footer a{
+  display: inline-block;
+  vertical-align: top;
+  opacity: 0.6;
+  padding: 0 10px;
+  transition: opacity .2s;
+}
+
+.footer a:hover{
+  opacity: 1;
+}
+
+.footer a svg{
+  width: 40px;
+  height: 40px;
+  fill: var(--white);
+}
+
+.copyright{
+  background: var(--grey-dark);
+}
+
+.copyright p{
+  color: var(--white);
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 800px){
+
+  .socials{
+    text-align: left;
+  }
+
+  .socials,
+  .copyright{
+    height: 100px;
+  }
+	.copyright{
+    position: relative;
+    background: var(--dark);
+  }
+  .copyright p{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+  }
+}
