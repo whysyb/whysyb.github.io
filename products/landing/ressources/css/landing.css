@@ -99,7 +99,7 @@
 }
 
 .scrolldown{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	bottom: 10px;
 	left: 50%;
@@ -218,6 +218,11 @@
 	.subscribe form button:hover{
 		background: var(--action-color-hover);
 	}
+	
+	.scrolldown{
+		display: inline-block;
+	}
+
 }
 
 .d-col-content p{
