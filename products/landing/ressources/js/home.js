@@ -13,18 +13,6 @@ $(document).ready(function(){
 			});
 		}
 	}
-
-	var slider = function(){
-		var owl = $('#news-slider'); 
-	  owl.owlCarousel({	 
-	      navigation : true,
-	      slideSpeed : 300,
-	      paginationSpeed : 400,
-	      singleItem:true	 
-	 
-	  });
-	}
-
 	var lightBox = function(){
 		var zoom = $('.zoom-img');
 		var lightboxDarker = $('.lightbox-darker');
@@ -74,7 +62,6 @@ $(document).ready(function(){
 	});
 	
 	connectWith();
-	slider();
 	lightBox();
 	frontPatch();
 })
