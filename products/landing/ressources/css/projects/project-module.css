@@ -1,0 +1,392 @@
+.main-header-open-button{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	line-height: 27px;
+	text-align: center;
+	transform: translateY(-50%);
+	background: var(--grey-light);
+	border: 1px solid var(--grey);
+}
+
+.projetcs-header-icons{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	background: var(--contrast-color-reverse);
+	padding: 15px;
+	border: 1px solid var(--grey-light);
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+	transform: translateY(105%);
+}
+
+.projetcs-header-icons a{
+	display: block;
+	margin-bottom: 10px;
+	color: var(--text-color);
+}
+
+.projetcs-header-icons a i{
+	margin-right: 5px;
+	font-size: 1.2em;
+	transform: translateY(1px);
+}
+
+.projetcs-header-icons a.button-green,
+.projetcs-header-icons a.button-green i{
+	color: var(--contrast-color-reverse);
+}
+
+.projetcs-header-icons::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 3px;
+	width: 25px;
+	height: 15px;
+	transform: translateY(-100%);
+	background: url(../../images/arrow-up-light.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.projects-list,
+.add-project-form{
+	padding: 130px 10px 0;
+}
+
+.projects-list ul li{
+	position: relative;
+	background: var(--contrast-color-reverse);
+	margin-bottom: 10px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+	transition: margin-bottom 0.2s ease-out;
+}
+
+.projects-list ul li.selected{
+	margin-bottom: 40px;
+}
+
+.toproject{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translateY(100%) translateX(200%);
+	padding: 5px;
+	transition: transform 0.2s ease-out;
+}
+
+.toproject.selected{
+	transform: translateY(100%) translateX(0);	
+}
+
+.project-list-info{
+	display: inline-block;
+	position: absolute;
+	top: 27px;
+	right: 10px;
+}
+
+.project-list-info i{
+	font-size: 1.6em;
+	color: rgba(0,0,0,0.2);
+}
+
+.projects-list ul li a{
+	display: block;
+	padding: 15px;
+	padding-right: 30px;
+	border: 1px solid transparent;
+	transition: border 0.2s;
+}
+
+.projects-list ul li a *{
+	transition: color 0.2s;	
+}
+
+.projects-list ul li a.selected{
+	border-color: var(--action-color);
+}
+
+.projects-list ul li a.selected *{
+}
+
+.projects-list ul li a p{
+	margin-bottom: 0;
+}
+
+.project-cell{
+	display: block;
+}
+
+.project-icon,
+.project-def{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.project-def{
+	margin-left: 10px;
+}
+
+.project-icon i,
+.project-def p{
+	font-size: 1.4em;
+}
+
+.project-icon i{
+	color: var(--orange)
+}
+
+.project-def p{
+	font-weight: 700;
+}
+
+.project-def p em{
+	font-size: 0.8em;
+	color: var(--grey-medium);
+	font-weight: 400;
+	font-style: italic;
+}
+
+.project-def span{
+	color: var(--text-light);
+	font-size: 0.8em;
+	line-height: 1.4em;
+}
+
+.pl-info{
+	display: none;
+	padding-top: 7px;
+	margin-top: 7px;
+	border-top: 1px solid var(--grey);
+}
+
+.project-create-date *,
+.project-last-edit *,
+.project-progress *{
+	font-size: 0.9em;
+	color: var(--grey-medium);
+	font-weight: 700;
+}
+
+.project-create-date span,
+.project-last-edit span,
+.project-progress span{
+	font-weight: 400;
+}
+
+.pl-legend{
+	display: none;
+}
+
+.add-project-form{
+}
+
+.file-button{
+	margin-top: 5px;
+}
+
+.add-project-form form{
+	padding: 15px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+}
+
+.projects-list ul li .toproject a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 5px;
+	margin-right: 0;
+}
+
+.projects-list ul li .toproject a span{
+	font-size: 0.8em;
+	margin-left: 3px;
+	color: var(--text-color);
+}
+
+.projects-list ul li .toproject a:hover{
+	box-shadow: none;
+	background: var(--grey);
+}
+
+@media only screen and (min-width:800px){
+
+	.main .project-main-header{
+		width: auto;
+	}
+
+	.projects-list{
+		padding-top: 20px;
+	}
+}
+
+@media only screen and (min-width:1100px){
+
+	.add-project-main{
+		padding-right: 225px;
+	}
+
+	.main .project-main-header.add-project-main-header{
+		right: 210px;
+	}
+
+	.add-project-form {
+	    padding: 20px 10px 0;
+	}
+
+	.main-header-open-button{
+		display: none;
+	}
+
+	.projetcs-header-icons{
+		display: inline-block;
+		transform: none;
+		padding: 0;
+		box-shadow: none;
+		border: none;
+		height: 100%;
+		padding-top: 3px;
+	}
+
+	.projetcs-header-icons a{
+		display: inline-block;
+		font-size: 0.8em;
+	}
+
+	.projetcs-header-icons a span{
+		display: none;
+	}
+
+	a.edit-project,
+	a.archive-project,
+	a.delete-project{
+		display: none;
+		margin-right: 10px;
+	}
+
+	a.edit-project.active,
+	a.archive-project.active,
+	a.delete-project.active{
+		display: inline-block;
+	}
+
+	.projetcs-header-icons a.button-green{
+		padding: 5px 10px;
+	}
+
+	.projetcs-header-icons::before{
+		display: none;
+	}
+
+	.pl-legend{
+		display: block;
+	}
+
+	.plegend{
+		display: inline-block;
+		float: left;
+		font-size: 0.7em;
+		line-height: 1.4em;
+		padding-bottom: 15px;
+	}
+
+	.pname{
+		padding-left: 10px;
+	}
+
+	.pname,
+	.pdate,
+	.pprogress{
+	}
+
+	.pname{
+		width: 65%;
+	}
+
+	.pdate,
+	.plastedit,
+	.pprogress{
+		width: 11.66%;
+		text-align: center;
+	}
+
+	.pdate{
+	}
+	.plastedit{
+	}
+	.pprogress{
+	}
+
+	.project-icon i,
+	.project-def p{
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+
+	.project-def{
+		max-width: 55%;
+	}
+
+	.project-list-info{
+		display: none;
+	}
+
+	.projects-list ul li a{
+		padding: 10px 15px;
+	}
+
+	.projects-list ul li a{
+		transition: box-shadow 0.2s;
+	}
+
+	.projects-list ul li a:hover{
+		box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	}
+
+	.project-def span{
+		font-size: 0.6em;
+		line-height: 1.4em;
+	}
+
+	.pl-info{
+		display: inline-block;
+		border-top: none;
+		float: right;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.project-cell{
+		display: inline-block;
+		float: left;
+		vertical-align: top;
+	}
+
+	.project-create-date span, 
+	.project-last-edit span, 
+	.project-progress span{
+		display: none;
+	}
+
+	.project-create-date, 
+	.project-last-edit, 
+	.project-progress{
+		font-size: 0.8em;
+		padding: 10px 15px;
+	}
+
+	.project-last-edit em{
+		font-weight: 400;
+		display: inline-block;
+		font-size: 0.8em;
+	}
+
+	.toproject{
+		cursor: pointer;
+	}
+}

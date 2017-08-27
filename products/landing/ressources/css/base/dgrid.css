@@ -1,0 +1,138 @@
+.d-container{
+	width: 100%;
+	height: auto;
+}
+
+.d-row{
+	overflow: auto;
+	zoom: 1;
+	width: 100%;
+	min-height: 100%;
+}
+
+.d-row.clear{
+	overflow: visible;
+}
+
+.marged-b-25{
+	margin-bottom: 25px;
+}
+
+.p-r-15{
+	padding-right: 15px;
+}
+
+.t-a-r{
+	text-align: center;
+}
+
+.d-col{
+	float: left;
+}
+
+.d-list{
+	padding-left: 25px;
+}
+
+.np-list{
+	padding-left: 0;
+}
+
+.d-list li{
+	margin-bottom: 10px;
+}
+
+.d-list li i{
+	margin-right: 15px;
+	font-size: 0.9em;
+	color: inherit;
+}
+
+.icon-list li{
+	position: relative;
+}
+
+.icon-list li i{
+	position: absolute;
+	top: 4px;
+	left: -25px;
+}
+
+.d-list-square{
+	list-style-type: square;
+}
+
+.d-col-content{
+	padding: 15px;
+}
+
+.d-col-content.p-15-30{
+	padding: 15px 30px;
+}
+
+.d-col-content.p-15-50{
+	padding: 15px 50px;
+}
+
+.d-col-content img{
+	max-width: 100%;
+}
+
+
+/*MOBILE*/
+
+	.d-col-12{width: 100%;}
+	.d-col-11{width: 100%;}
+	.d-col-10{width: 100%;}
+	.d-col-9{width: 100%;}
+	.d-col-8{width: 100%;}
+	.d-col-7{width: 100%;}
+	.d-col-6{width: 100%;}
+	.d-col-5{width: 100%;}
+	.d-col-4{width: 100%;}
+	.d-col-3{width: 100%;}
+	.d-col-2{width: 100%;}
+	.d-col-1{width: 100%;}
+
+	.d-col-8-full-tablet{width: 100%;}
+	.d-col-4-full-tablet{width: 100%;}
+
+/*TABLET*/
+
+@media only screen and (min-width:800px){
+	.d-col-12{width: 100%;}
+	.d-col-11{width: 91.67%;}
+	.d-col-10{width: 83.34%;}
+	.d-col-9{width: 17%;}
+	.d-col-8{width: 66.67%;}
+	.d-col-7{width: 58.33%;}
+	.d-col-6{width: 50%;}
+	.d-col-5{width: 41.66%;}
+	.d-col-4{width: 33.33%;}
+	.d-col-3{width: 25%;}
+	.d-col-2{width: 16.66%;}
+	.d-col-1{width: 8.33%;}
+
+	.d-col-8-full-tablet{width: 100%;}
+	.d-col-4-full-tablet{width: 100%;}
+}
+
+/*DESKTOP*/
+
+@media only screen and (min-width:1100px){
+	.d-col-12{width: 100%;}
+	.d-col-11{width: 91.67%;}
+	.d-col-10{width: 83.34;}
+	.d-col-9{width: 17%;}
+	.d-col-8{width: 66.67%;}
+	.d-col-7{width: 58.33%;}
+	.d-col-6{width: 50%;}
+	.d-col-5{width: 41.66%;}
+	.d-col-4{width: 33.33%;}
+	.d-col-3{width: 25%;}
+	.d-col-2{width: 16.66%;}
+	.d-col-1{width: 8.33%;}
+
+	.d-col-8-full-tablet{width: 66.67%;}
+	.d-col-4-full-tablet{width: 33.33%;}
+}

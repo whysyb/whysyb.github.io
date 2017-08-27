@@ -244,7 +244,7 @@ a.start:hover{
 
 .encrypted-email{
 	margin-top: 25px;
-	font-size: 2em;
+	font-size: 1.1em;
 	font-weight: 700;
 }
 
@@ -316,4 +316,8 @@ a.start:hover{
   .project:hover .project-info{
    	opacity: .95;
   }
+
+  .encrypted-email{
+		font-size: 2em;
+	}
 }

@@ -1,0 +1,74 @@
+:root {
+	--dgreen: #323742;
+	--dgreen-light: #3A404D;
+	--dgreen-lighter: #474D5B;
+	--dgreen-dark: #2A2F3A;
+	--dgreen-darker: #1E232D;
+	--action-color: #56bfb5;
+	--action-color-hover: #5DC7BD;
+	
+	--dgreen-toolbar: #fff;
+	--dgreen-toolbar-menu: #A4A9A8;
+	--dgreen-toolbar-menu-hover: #F3F5F4;
+	--dgreen-toolbar-profil: #F3F5F4;
+	
+	--admin-menu: #444A56;
+	--admin-menu-link: #2D3139;
+	--admin-menu-hover: #4D5360;
+	--admin-menu-active: #575D6B;
+	--admin-menu-submenu: #2C3443;
+
+	--error: #e74c3c;
+	--success: #56bfb5;
+	--info: #3498db;
+	--danger: #f39c12;
+
+	--dgreen-trans: rgba(56,129,122,0.9);
+	--white-trans: rgba(255,255,255,0.9);
+	--white-trans-half: rgba(255,255,255,0.6);
+
+	--grey-lighter: #F9F9F9;
+	--grey-light: #f6f6f6;
+	--grey: #DEDEDE;
+	--grey-m-l: #E9E9E9;
+	--grey-m-lr: #F2F2F2;
+	--grey-medium-lighter: #EEEEEE;
+	--grey-medium-light: #D6D6D6;
+	--grey-medium: #B4B4B4;
+	--grey-dark: #454545;
+	--grey-darker: #272727;
+	--grey-hover: #C5C4C4;
+	--grey-todo: #F2F2F2;
+	--grey-half: #E7A372;
+	--grey-half-light: #ECB48B;
+	--grey-blue-green: #EBF8F6;
+	--grey-green: #F0F7F6;
+	--grey-green-darker: #E2EAE9;
+
+
+	--text-color: #555;
+	--text-light: #696969;
+	--text-lighter: #949494;
+	--contrast-color: #555;
+	--admin-contrast-color: #fff;
+	--contrast-color-reverse: #fff;
+	--header-color: #fff;
+
+	--online: #70E15E;
+	--offline: #FE5763;
+
+	--dark-blue: #444A56;
+	--dark-blue-light: #616876;
+	--dark-blue-light-hover: #707785;
+	--dark-blue-hover: #4D5360;
+	--light-blue: #50B7EC;
+	--orange: #edaf82;
+	--orange-hover: #F3BB93;
+	--red: #DA313D;
+	--green: #57CE44;
+	--green-light: #87E378;
+	--yellow: #e9c64f;
+	--bordeau: #d95656;
+	--violet: #9b59ac;
+	--apple: #59ac7c;
+}

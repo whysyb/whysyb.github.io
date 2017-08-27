@@ -1,0 +1,51 @@
+.alert{
+	width: 100%;
+	border-radius: 5px;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.alert p{
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.alert p i{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 1.2em;
+	transform: translateY(1px);
+}
+
+.alert i{
+	margin-right: 10px;
+	color: #fff;
+	font-size: 1.2em;
+	transform: translateY(1px);
+}
+
+.alert p strong{
+	font-weight: 700;
+}
+
+.error{
+	background: var(--error);
+}
+
+.success{
+	background: var(--success);
+}
+
+.info{
+	background: var(--info);
+}
+
+.danger{
+	background: var(--danger);
+
+}

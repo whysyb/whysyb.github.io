@@ -1,0 +1,248 @@
+.section-content-title{
+	font-size: 1.6em;
+	line-height: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.section-home{
+	overflow: hidden;
+}
+
+.section-home-background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/background-gradient.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 80;
+}
+
+.section-home-background-effect{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/background-gradient-effect.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 81;
+	animation: backgroundRotate 300s linear infinite;
+}
+
+@keyframes backgroundRotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.section-home-front,
+.login-section{
+	background: linear-gradient(45deg, rgba(50,55,66,0.6), rgba(86,191,181,0.6));	
+}
+
+.section-cloudies{
+	background-image: url(../images/cloudies.png);
+	background-color: var(--grey-blue-green);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.d-row-feature{
+	overflow: visible;
+}
+
+.feature-bloc{
+	text-align: center;
+}
+
+.feature-bloc-in{
+	background: var(--contrast-color-reverse);	
+	padding: 20px 20px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+}
+
+.feature-bloc img{
+	width: 40%;
+}
+
+.feature-bloc h4{
+	font-size: 1.4em;
+	font-weight: 700;
+	margin: 15px 0;
+}
+
+.feature-bloc p{
+}
+
+.feature-list{
+	position: relative;
+	margin-top: 20px;
+	padding: 20px 0 5px 45px;
+}
+
+/*.feature-list::before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 25px;
+	background: var(--grey);
+}*/
+
+
+.feature-list li{
+	position: relative;
+	font-size: 0.9em;
+	margin-bottom: 15px;
+}
+
+.feature-list li::before{
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: -10px;
+	width: 35px;
+	height: 2px;
+	background: var(--grey);
+	transform: translateX(-100%);
+}
+
+.feature-list li::after{
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: -55px;
+	width: 20px;
+	height: 20px;
+	background: var(--contrast-color-reverse);
+	border: 2px solid var(--grey);
+	border-radius: 100%;
+}
+
+.feature-list li span{
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: -45px;
+	width: 2px;
+	height: 110%;
+	background: var(--grey);
+}
+
+.feature-section-title{
+	text-align: center;
+	padding: 0px 100px 50px;
+}
+
+.feature-section-title h3{
+	font-size: 2em;
+	line-height: 1.4em;
+	color: var(--contrast-color-reverse);
+	text-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	font-weight: 700;
+}
+
+.header-page{
+	background: url(../images/background-gradient.png);	
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.section-lexicon{
+	position: relative;	
+	background: url(../images/background-gradient.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.lexicon-reload{
+	display: inline-block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.lexicon-reload i{
+	color: var(--contrast-color-reverse);
+	font-size: 1.2em;
+}
+
+.lexicon-mastertitle{
+	display: block;
+	color: rgba(255,255,255,0.6);
+	font-size: 0.8em;
+}
+
+.lexicon-title-container{
+	background: var(--contrast-color-reverse);
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.section-lexicon h3{
+	display: inline-block;
+	font-size: 1.6em;
+	padding: 15px;
+	background: -webkit-linear-gradient(45deg, rgba(50,55,66,0.6), rgba(86,191,181,0.6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-lexicon p{
+	color: var(--contrast-color-reverse);
+}
+
+a.lexicon-more{
+	display: inline-block;
+	color: var(--contrast-color-reverse);
+	text-decoration: none;
+	padding: 5px 15px;
+	background: var(--orange);
+	border-radius: 3px;
+	margin-top: 10px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+	transition: background 0.2s;
+}
+
+.lexicon-source-container{
+	text-align: right;
+	padding-top: 25px;
+}
+
+a.lexicon-source{
+	color: rgba(255,255,255,0.6);
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+@media only screen and (min-width:1100px){
+	.section-home-background-effect{
+		display: block;
+	}	
+
+	.section-lexicon .section-content{
+		padding: 60px 190px;
+	}
+
+	a.lexicon-more:hover{
+		background: var(--orange-hover);
+	}
+}
